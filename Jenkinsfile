@@ -29,7 +29,7 @@ pipeline {
                     sh "git tag -a ${GIT_TAG} -m 'Release ${GIT_TAG}'"
                     
                     // Push the tag to the repository securely
-                    withCredentials([usernamePassword(credentialsId: 'hoang6337', usernameVariable: 'GIT_USERNAME', passwordVariable: 'GIT_PASSWORD')]) {
+                    withCredentials([usernamePassword(credentialsId: 'oshio10', usernameVariable: 'oshio10', passwordVariable: 'Chen06112002')]) {
                         sh "git push https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/oshio10/HelloWorldMaven.git ${GIT_TAG}"
                     }
                 }
