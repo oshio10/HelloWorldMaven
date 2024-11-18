@@ -22,8 +22,8 @@ pipeline {
             steps {
                 script {
                     // Set Git configurations
-                    sh 'git config user.name "HoangPham6337"'
-                    sh 'git config user.email "hoangpham4171@gmail.com"'
+                    sh 'git config user.name "oshio10"'
+                    sh 'git config user.email "patricksunchen@gmail.com"'
                     
                     // Tagging the repository
                     sh "git tag -a ${GIT_TAG} -m 'Release ${GIT_TAG}'"
